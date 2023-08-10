@@ -1,4 +1,4 @@
-# Runpod SD-WebUI One Script Installer
+# SD-WebUI One Script Installer
 
 ## Getting started
 
@@ -7,15 +7,16 @@
 * Download the startscript file
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/AugmentedStupidity/runpod-sd-script/main/runpod_sd_webui_startscript.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/AugmentedStupidity/Server-Setup/main/runpod_sd_webui_startscript.sh)"
 ```
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/AugmentedStupidity/runpod-sd-script/main/text-setup.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/AugmentedStupidity/Server-Setup/main/text-setup.sh)"
 ```
-
-
 ```bash
-wget [https://gist.github.com/panta5/8706ce687576c4a80192fa3c05cffafc/raw/runpod_sd_webui_startscript.sh](https://raw.githubusercontent.com/AugmentedStupidity/runpod-sd-script/main/runpod_sd_webui_startscript.sh) -O /root/runpod.sh && chmod +x /root/runpod.sh && sed -i 's/NGROK_TOKEN_HERE/blablabla/g' /root/runpod.sh && bash /root/runpod.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/AugmentedStupidity/Server-Setup/main/text-setup-sudo.sh)"
+```
+```bash
+wget [https://gist.github.com/panta5/8706ce687576c4a80192fa3c05cffafc/raw/runpod_sd_webui_startscript.sh](https://raw.githubusercontent.com/AugmentedStupidity/Server-Setup/main/runpod_sd_webui_startscript.sh) -O /root/runpod.sh && chmod +x /root/runpod.sh && sed -i 's/NGROK_TOKEN_HERE/blablabla/g' /root/runpod.sh && bash /root/runpod.sh
 ```
 
 ```bash
