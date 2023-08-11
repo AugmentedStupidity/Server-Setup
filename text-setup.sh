@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt install libgl1 -yq
-sudo apt update && apt install -y nano libgl1 ffmpeg neofetch glances htop wget git python3 python3-venv pip ocl-icd-libopencl1 nvidia-cuda-toolkit hashcat hcxdumptool && ffmpeg -version
+sudo apt install libgl1
+sudo apt update && sudo #apt install -y nano libgl1 ffmpeg neofetch glances htop wget git python3 python3-venv pip ocl-icd-libopencl1 nvidia-cuda-toolkit hashcat hcxdumptool && ffmpeg -version
 sudo apt install --no-install-recommends google-perftools -y
 
 # Ngrok
@@ -28,11 +28,11 @@ git lfs install
 #git pull https://huggingface.co/TheBloke/Wizard-Vicuna-30B-Uncensored-GPTQ
 #git clone https://huggingface.co/TheBloke/Wizard-Vicuna-13B-Uncensored-GPTQ
 #git pull https://huggingface.co/TheBloke/Wizard-Vicuna-13B-Uncensored-GPTQ
-git clone https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GPTQ
-git pull https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GPTQ
+#git clone https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GPTQ
+#git pull https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GPTQ
 git lfs install
-#git clone https://huggingface.co/TheBloke/llama-2-70b-Guanaco-QLoRA-GPTQ
-#git pull https://huggingface.co/TheBloke/llama-2-70b-Guanaco-QLoRA-GPTQ
+git clone https://huggingface.co/TheBloke/llama-2-70b-Guanaco-QLoRA-GPTQ
+git pull https://huggingface.co/TheBloke/llama-2-70b-Guanaco-QLoRA-GPTQ
 #git clone https://huggingface.co/georgesung/llama2_7b_chat_uncensored
 #git pull https://huggingface.co/georgesung/llama2_7b_chat_uncensored
 
@@ -74,10 +74,10 @@ cd ./text-generation-webui
 #cd /root/text-generation-webui
 #sed -i 's/--api/--api --model TheBloke_Wizard-Vicuna-30B-Uncensored-GPTQ --model_type LLaMA --chat --wbits 4 --auto-devices --extensions long_term_memory whisper_stt silero_tts elevenlabs_tts llama_prompts sd_api_pictures/g' /workspace/run-text-generation-webui.sh
 
-sed -i 's/--api/--api --model TheBloke_Wizard-Vicuna-7B-Uncensored-GPTQ --model_type LLaMA --chat --wbits 4 --auto-devices --extensions long_term_memory whisper_stt silero_tts elevenlabs_tts llama_prompts sd_api_pictures/g' /workspace/run-text-generation-webui.sh
+sed -i 's/--api/--api --model TheBloke_llama-2-70b-Guanaco-QLoRA-GPTQ --model_type LLaMA --chat --wbits 4 --auto-devices --extensions long_term_memory whisper_stt silero_tts elevenlabs_tts llama_prompts sd_api_pictures/g' /workspace/run-text-generation-webui.sh
 #python server.py --listen --api --model TheBloke_Wizard-Vicuna-30B-Uncensored-GPTQ --model_type LLaMA --chat --wbits 4 --auto-devices --extensions long_term_memory whisper_stt silero_tts elevenlabs_tts llama_prompts sd_api_pictures
 
-
+#TheBloke/llama-2-70b-Guanaco-QLoRA-GPTQ
 #echo "bash -c /workspace/stable-diffusion-webui/start.sh"
 
 
